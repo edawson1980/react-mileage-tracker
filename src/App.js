@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Form from './Form.js';
+import Form from './Form.js'; //don't forget to import all your compnents!
 import './App.css';
 
 class App extends Component {
