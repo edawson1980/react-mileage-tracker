@@ -39,7 +39,8 @@ class Form extends Component {
             <input type="text" defaultValue={this.state.value} onChange={this.handleChange} />
           </label>
 
-            <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" className='form-submit'/>
+
 
         </form>
 

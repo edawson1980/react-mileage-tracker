@@ -1,3 +1,13 @@
 .Form{
   background-color: #CDE6FF;
 }
+
+.form-submit{
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: yellow;
+  box-shadow: 2px 2px 5px gray;
+}
