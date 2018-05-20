@@ -3,12 +3,13 @@ import './App.css';
 
 class TrackerDashboard extends Component {
   state = {
-    miles: [],
+    miles: '',
   };
 
-  handleEnterMiles = (m) =>{
+  handleEnterMiles = (e) =>{
     console.log('this is working')
-    this.addMiles(m);
+
+    this.addMiles();
   };
 
   addMiles = (m) => {
