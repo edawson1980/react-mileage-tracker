@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DailyTracker from './DailyTracker';
 import './App.css';
 
 class TrackerDashboard extends Component {
@@ -39,32 +40,6 @@ class TrackerDashboard extends Component {
   }
 }
 
-class DailyTracker extends Component{
-  handleEnterMiles = () => {
-    this.props.onEnterMiles();
-  }
-  render(){
-    return(
-      <div className='tracker'>
-        <form>
-          <label>Enter Today's Mileage: </label>
-          <input type='text' defaultValue={this.props.miles} />
-          <button
-            className='daily-submit'
-            onClick={this.handleEnterMiles}
-          >
-            Enter Miles
-          </button>
-        </form>
-        <div className='total'>
-          <h3>
-            Today you ran {this.onClick} miles
-          </h3>
-        </div>
-      </div>
-    )
-  }
-}
 
 
 

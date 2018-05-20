@@ -2,27 +2,25 @@ import React, {Component} from 'react';
 import './Form.css';
 
 class Form extends Component {
-  constructor(props){
-    super(props);
-    //inital state of 'value' is empty
-    this.state = {value: ''};
+  state = {
+    value: '',
+    };
 
-    //bind the event handlers to 'this'
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+
+
+
 
   //function takes an argument 'event' and sets the State of 'this' to whatever is inputted for value
-  handleChange(event){
-    this.setState({value: event.target.value});
+  handleChange = (event) => {
+    this.setState({value: event.target.value})
   }
 
   //function responds to the event (in this case 'event' is Submitting the form)
-  handleSubmit(event){
+  handleSubmit = (event) =>{
     //preventDefault stops the form from technically submitting (sending a get request somewhere with that info)
-    event.preventDefault();
+    event.preventDefault()
     console.log(`You ran ${this.state.value} miles today!  Awesome!`);
-  }
+  };
 
 
 
@@ -45,11 +43,11 @@ class Form extends Component {
 
         </form>
 
-        <h3> you ran {this.state.value} miles</h3>
+        <h3> you ran {this.state.value} miles today!  Awesome!</h3>
 
       </div>
     )
-  }
+  };
 };
 
 export default Form;
