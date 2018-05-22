@@ -12,6 +12,8 @@ class App extends Component {
         <h3>Keep track of how far you run, and average your weekly distance with this handy tool!</h3>
 
         <Form />
+
+
       </div>
     );
   }

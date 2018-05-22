@@ -9,7 +9,7 @@ class DailyTracker extends Component{
   render(){
     return(
       <div className='tracker'>
-        <Form />
+        
       </div>
     )
   }

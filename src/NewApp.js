@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DailyTracker from './DailyTracker';
+import Form from './Form';
 import './App.css';
 
 class TrackerDashboard extends Component {
@@ -34,6 +35,8 @@ class TrackerDashboard extends Component {
           miles = {this.state.miles}
           onEnterMiles = {this.handleEnterMiles}
         />
+        <Form />
+
       </div>
     </div>
     )

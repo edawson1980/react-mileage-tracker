@@ -20,11 +20,13 @@ class Form extends Component {
     //preventDefault stops the form from technically submitting (sending a get request somewhere with that info)
     event.preventDefault()
     console.log(`You ran ${this.state.value} miles today!  Awesome!`);
+
   };
 
 
 
   render(){
+
     return(
       <div className='Form'>
         <h2>Enter Your Miles Here:</h2>
@@ -36,15 +38,17 @@ class Form extends Component {
             {/*using defaultValue instead of value makes the state of this field mutuable. i.e. allows the
               user to actually type something in. if the field has 'value' instead of 'defaultValue', the
               form field becomes read-only*/}
-            <input type="text" defaultValue={this.state.value} onChange={this.handleChange} />
+            <input type="text" defaultValue={this.state.value}  onInput={this.handleChange}/>
           </label>
 
-          <input type="submit" value="Submit" className='form-submit'/>
+          <input type="submit" value="Submit" className='form-submit' />
 
 
         </form>
 
-        <h3> you ran {this.state.value} miles today!  Awesome!</h3>
+        <div className="output">
+          <h3> you ran {this.state.value} miles today!  Awesome!</h3>
+        </div>
 
       </div>
     )
